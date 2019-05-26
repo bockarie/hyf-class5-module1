@@ -1,0 +1,97 @@
+/*
+  Stylesheet for my Curriculum Vitae.
+
+  It demonstrates a few of the bsic CSS principles like:
+  - selector methods (by tag name, by id, with specific parent elements, etc.)
+  - fonts, margins, paddings, colors, borders, etc.
+  - float (and issues associated with it)
+  - rules overriding and precedence
+  - different units for number values
+*/
+
+body {
+  font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+  font-size: 18px;
+}
+
+body > header {
+  text-align: center;
+}
+
+body > header h1 {
+  margin-bottom: 0;
+}
+
+body > header p {
+  font-family: serif;
+  font-size: 120%;
+  font-style: italic;
+}
+
+main, aside {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  margin: 0 0 50px 0;
+}
+
+section h2 {
+  border-bottom: solid 1px #ccc;
+}
+
+section#about {
+  clear: both;
+  overflow: hidden;
+}
+
+section#about img.mugshot {
+  border-radius: 50%;
+  float: left;
+  margin-right: 1rem;
+  width: 100px;
+}
+
+aside {
+  background-color: #f0f0f0;
+  border: dashed 2px #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 1.5rem 1rem;
+}
+
+aside h2 {
+  margin: 0 0 1em 0;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+aside ul li a {
+  color: #000;
+  display: block;
+  padding: 5px 0;
+}
+
+aside ul li a:hover {
+  background-color: #ddd;
+  color: teal;
+}
+
+body > footer {
+  border-top: dotted 5px #ccc;
+  color: #666;
+  margin-top: 50px;
+  padding: 0.5rem;
+  text-align: center;
+}
